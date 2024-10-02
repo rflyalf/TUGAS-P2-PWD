@@ -1,0 +1,138 @@
+:root {
+    --primary: #a594f9;
+}
+body {
+    font-family: Poppins, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* container */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/* header */
+.header {
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-bottom: 3px solid var(--primary);
+    text-align: center;
+}
+.header .judul {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+.header .judul span {
+    color: var(--primary);
+}
+.header ul {
+    list-style: none;
+    padding: 0;
+}
+.header ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+.header a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    position: relative;
+    font-size: 1.2rem;
+}
+.header a:hover {
+    color: var(--primary);
+}
+.header a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: width 0.4s;
+}
+.header a:hover::after {
+    width: 100%;
+}
+
+/* Banner */
+.banner {
+    height: 450px;
+    background-image: url('/TI23B/latihan2_per2/img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 3px solid var(--primary);
+}
+
+/* Content */
+.content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.content h4.subjudul {
+    font-size: 2rem;
+    font-weight: 600; 
+    margin-bottom: 1.5rem; 
+    text-align: left;
+    position: relative; 
+    color: #333; 
+    letter-spacing: 1px; 
+    padding-bottom: 0.5rem; 
+}
+
+.content h4.subjudul::after {
+    content: ""; 
+    position: absolute;
+    width: 50px; 
+    height: 3px; 
+    background-color: var(--primary); 
+    bottom: 0; 
+    left: 0; 
+    border-radius: 2px; 
+}
+
+.content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    text-align: center;
+}
+.content img {
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+.content img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    padding: 20px;
+    color: #eaeaea;
+    text-align: center;
+}
+.footer .copy {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+.footer svg {
+    stroke: #eaeaea;
+    margin: 0 10px;
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+.footer svg:hover {
+    transform: rotate(360deg);
+    stroke: var(--primary);
+}
+
+/* Smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
