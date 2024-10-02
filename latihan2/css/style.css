@@ -66,7 +66,23 @@ body {
     background-size: cover;
     background-position: center;
     border-bottom: 3px solid var(--primary);
+    position: relative; /* Untuk memungkinkan positioning elemen di dalamnya */
+    display: flex;
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center; /* Pusatkan secara vertikal */
 }
+
+.banner-text {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff; /* Warna teks putih agar kontras dengan banner */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Memberikan bayangan untuk meningkatkan keterbacaan */
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan untuk keterbacaan yang lebih baik */
+    padding: 20px 200px;
+    border-radius: 8px; /* Sedikit lengkungan pada tepi latar belakang */
+}
+
+
 
 /* Content */
 .content {
